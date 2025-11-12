@@ -1,0 +1,15 @@
+# Ignore everything by default
+*
+
+# Include your main configs
+!hypr/**
+!waybar/**
+!alacritty/**
+!wofi/**
+!nvim/**
+!scripts/**
+!pkglist.txt
+!aurlist.txt
+!.local/share/applications/**
+!.gitignore
+
