@@ -1,15 +1,36 @@
 # Ignore everything by default
 *
 
-# Include your main configs
+# Keep the ignore file itself
+!.gitignore
+
+# Whitelist specific top-level config dirs (and all contents)
+!hypr/
 !hypr/**
+
+!waybar/
 !waybar/**
+
+!alacritty/
 !alacritty/**
-!wofi/**
+
+!nvim/
 !nvim/**
-!scripts/**
+
+!walker/
+!walker/**
+
+# If you track Aseprite build/config under .config
+!aseprite/
+!aseprite/**
+
+# Allow .local/share/applications (parents must be un-ignored first)
+!.local/
+!.local/share/
+!.local/share/applications/
+!.local/share/applications/**
+
+# Package lists for reproducible setup
 !pkglist.txt
 !aurlist.txt
-!.local/share/applications/**
-!.gitignore
 
